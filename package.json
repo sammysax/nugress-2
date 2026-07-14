@@ -1,0 +1,26 @@
+{
+  "name": "nugress-gk-website",
+  "version": "1.0.0",
+  "description": "Professional website for NUGRESS GK - IT Solutions & Business Services",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "http-server public/ -p 8000 -o",
+    "serve": "http-server public/ -p 8000",
+    "dev": "http-server public/ -p 8000 -c-1"
+  },
+  "keywords": [
+    "IT services",
+    "business logistics",
+    "technology solutions",
+    "consulting"
+  ],
+  "author": "NUGRESS GK",
+  "license": "© 2010-2024 NUGRESS GK. All rights reserved.",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
