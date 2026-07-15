@@ -101,12 +101,12 @@ li {
 .logo {
   float: left;
   margin: 0;
-  border: 5px solid var(--line);
-  border-radius: 10px;
+
 }
 
 .logo img {
   width: min(244px, 58vw);
+  border-radius: 10px;
 }
 
 .tel {
