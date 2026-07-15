@@ -101,6 +101,8 @@ li {
 .logo {
   float: left;
   margin: 0;
+  border: 5px solid var(--line);
+  border-radius: 10px;
 }
 
 .logo img {
@@ -134,7 +136,7 @@ li {
   padding: 0 16px;
   color: #ffffff;
   background: var(--brand);
-  border-radius: var(--radius);
+  border-radius: 15px;
   font-weight: 700;
   text-decoration: none;
   box-shadow: 0 10px 24px rgba(41, 99, 196, 0.22);
@@ -165,7 +167,7 @@ li {
   overflow-x: auto;
   border: 1px solid rgba(220, 227, 236, 0.92);
   background: rgba(255, 255, 255, 0.9);
-  border-radius: var(--radius);
+  border-radius: 15px;
   box-shadow: 0 12px 30px rgba(18, 32, 51, 0.08);
 }
 
@@ -180,7 +182,7 @@ li {
   height: 42px !important;
   padding: 0 12px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 15px;
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -204,7 +206,7 @@ li {
   width: var(--container);
   min-height: clamp(360px, 52vw, 560px);
   margin: 26px auto 0;
-  border-radius: var(--radius);
+  border-radius: 15px;
   overflow: hidden;
   background:
     linear-gradient(105deg, rgba(12, 27, 48, 0.88), rgba(12, 27, 48, 0.52)),
@@ -480,7 +482,7 @@ h5 {
 
 .stat {
   padding: 16px;
-  border-radius: var(--radius);
+  border-radius: 15px;
   background: #ffffff;
   border: 1px solid var(--line);
 }
@@ -511,7 +513,7 @@ h5 {
   padding: 18px;
   border: 1px solid var(--line);
   border-top: 0;
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: 0 0 15px 15px;
   background: #ffffff;
 }
 
@@ -711,7 +713,6 @@ hr {
 
 .copy {
   float: none;
-  width: auto;
   text-align: right;
   color: rgba(255, 255, 255, 0.62);
   font-size: 0.78rem;
@@ -720,6 +721,7 @@ hr {
 .copy img {
   margin-left: auto;
   width: 174px;
+  border-radius: 6px;
 }
 
 @media (max-width: 860px) {
@@ -817,3 +819,30 @@ hr {
     padding: 18px;
   }
 }
+
+ .services-grid article.top {
+            transition: transform 200ms ease, box-shadow 200ms ease;
+            will-change: transform;
+            display: block;
+            background: #fff;
+            border-radius: 15px;
+        }
+        .services-grid article.top:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+            z-index: 2;
+        }
+        /* .services-grid article.top .seemore a:hover {
+            text-decoration: none;
+        } */
+        /* Make images slightly scale on hover for a nicer effect */
+        .services-grid article.top .top2 img {
+            transition: transform 250ms ease;
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .services-grid article.top:hover .top2 img {
+            transform: scale(1.04);
+        }
